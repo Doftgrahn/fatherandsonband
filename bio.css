@@ -1,0 +1,62 @@
+body {
+  font-size: 25px;
+  margin: 0;
+}
+
+header>* {
+  background-color: #1e1e24;
+}
+
+ul {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  padding: 10px;
+  list-style-type: none;
+  border: 1px solid black;
+}
+
+header li {
+  display: inline;
+  float: left;
+}
+
+header li a {
+  display: block;
+  margin-left: 10px;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none;
+  color: gray;
+  color: #fff8f0;
+}
+
+header li a:hover {
+  color: #ffcf99;
+}
+
+.information-container {
+  display:flex;
+  height:640px;
+}
+
+.information {
+  width:100%;
+}
+
+.information1 {
+  background-color: gray;
+}
+
+.information2 {
+  background-color:lightblue;
+}
+.information3 {
+  background-color: gray;
+}
+.information4 {
+  background-color:lightblue;
+}
+.information5 {
+  background-color:gray;
+}

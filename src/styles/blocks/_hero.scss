@@ -1,6 +1,34 @@
 .b-hero {
   width: 100%;
   height: 65vh;
-  background: $color-red;
-  color: $color-white;
+  background: rgba(170, 89, 57, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  h1 {
+    color: $color-light;
+    letter-spacing: 4px;
+    font-size: 80px;
+    text-align: center;
+    text-shadow: 4px 0px $color-red-dark;
+    margin: 0;
+  }
+  p {
+    color: $color-light;
+    text-align: right;
+    letter-spacing: 2px;
+    font-size: 18px;
+    margin: 0;
+    font-family: $font-italic;
+  }
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
 }

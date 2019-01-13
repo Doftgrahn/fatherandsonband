@@ -1,0 +1,40 @@
+.b-members {
+   background-color:$color-red;
+}
+
+.b-members-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 100%;
+   background-color: $color-gray;
+}
+
+.b-members__m {
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+.b-members__member {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 33%;
+  width: calc(100%/3);
+  border: 1px solid black;
+}
+
+.b-members__member-img {
+  width: 500px;
+  height: 500px;
+  margin: 20px;
+}
+
+.b-members__member-info {
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  border: 3px solid $color-red-dark;
+  background-color: $color-red;
+}

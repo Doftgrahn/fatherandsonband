@@ -1,0 +1,15 @@
+.b-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin:0 auto;
+  background: $color-light;
+  &__container {
+    max-width: $width-content;
+    padding: $spacing-regular;
+  }
+  h2 {
+    color: $color-red-dark;
+  }
+}

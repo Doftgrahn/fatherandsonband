@@ -1,5 +1,11 @@
 .b-members {
-   background-color:$color-red;
+  background-color: $color-red;
+
+  .b-members__m {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+  }
 }
 
 .b-members-wrapper {
@@ -7,13 +13,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   max-width: 100%;
-   background-color: $color-gray;
-}
-
-.b-members__m {
-  margin: 0;
-  padding: 10px;
-  text-align: center;
+  background-color: $color-light;
 }
 
 .b-members__member {
@@ -22,11 +22,11 @@
   justify-content: center;
   width: 33%;
   width: calc(100%/3);
-  border: 1px solid black;
+  // border: 1px solid black;
 }
 
 .b-members__member-img {
-  width: 500px;
+  width: 400px;
   height: 500px;
   margin: 20px;
 }

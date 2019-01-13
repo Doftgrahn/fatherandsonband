@@ -1,15 +1,38 @@
 .b-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin:0 auto;
   background: $color-light;
-  &__container {
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 40px $spacing-regular;
     max-width: $width-content;
-    padding: $spacing-regular;
+    margin: 0 auto
   }
-  h2 {
-    color: $color-red-dark;
+  &__container {
+    width: 50%;
+
+    h2 {
+      color: $color-red-dark;
+    }
+  }
+
+  &__images {
+    width: 50%;
+    padding: 40px;
+    position: relative;
+    z-index: 0;
+    img {
+      width: 80%;
+      padding-bottom: 80px;
+      &:last-child {
+        width: 60%;
+        position: absolute;
+        bottom: 0px;
+        right: 0;
+        padding-bottom: 0;
+      }
+    }
   }
 }

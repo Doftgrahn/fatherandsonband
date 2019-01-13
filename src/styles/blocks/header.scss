@@ -1,0 +1,31 @@
+header>* {
+  background-color: #1e1e24;
+  
+  li {
+    display: inline;
+    float: left;
+
+    a {
+      display: block;
+      margin-left: 10px;
+      padding: 14px 16px;
+      text-align: center;
+      text-decoration: none;
+      color: gray;
+      color: #fff8f0;
+
+      &:hover {
+        color: #ffcf99;
+      }
+    }
+  }
+}
+
+ul {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  padding: 10px;
+  list-style-type: none;
+  border: 1px solid black;
+}

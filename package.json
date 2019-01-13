@@ -1,0 +1,34 @@
+{
+	"name": "Father-and-son",
+	"version": "1.0.0",
+	"dependencies": {
+		"babel-plugin-transform-object-assign": "^6.22.0",
+		"del": "^3.0.0",
+		"js-marker-clusterer": "^1.0.0",
+		"vinyl-source-stream": "^2.0.0"
+	},
+	"devDependencies": {
+		"babel-core": "^6.26.0",
+		"babel-plugin-transform-es2015-classes": "^6.24.1",
+		"babel-preset-env": "^1.6.1",
+		"babel-preset-es2015": "^6.24.1",
+		"babelify": "^8.0.0",
+		"browser-sync": "^2.23.5",
+		"browserify": "^15.2.0",
+		"gulp": "^4.0.0",
+		"gulp-autoprefixer": "^4.1.0",
+		"gulp-babel": "^7.0.1",
+		"gulp-clean-css": "^3.9.2",
+		"gulp-concat": "^2.6.1",
+		"gulp-notify": "^3.2.0",
+		"gulp-sass": "^3.1.0",
+		"gulp-svg-sprite": "^1.3.7",
+		"gulp-uglify": "^3.0.0",
+		"gulp-util": "^3.0.8",
+		"vinyl-buffer": "^1.0.1"
+	},
+	"scripts": {
+		"watch": "gulp watch",
+		"build": "gulp build"
+	}
+}

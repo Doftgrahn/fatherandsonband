@@ -1,6 +1,6 @@
-header>* {
+header > * {
   background-color: #1e1e24;
-  
+
   li {
     display: inline;
     float: left;
@@ -24,7 +24,6 @@ header>* {
 ul {
   overflow: hidden;
   margin: 0;
-  padding: 0;
   padding: 10px;
   list-style-type: none;
   border: 1px solid black;

@@ -7,4 +7,15 @@ h1,
 h2,
 h3 {
   font-family: $font-headline;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 42px
+}
+h2 {
+  font-size: 34px;
+}
+h3 {
+  font-size: 28px;
 }

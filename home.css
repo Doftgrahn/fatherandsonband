@@ -9,11 +9,11 @@
 
 #111D4A
 
-
 -----*/
 body {
   font-size: 25px;
   margin: 0;
+  background-color: #FFF8F0;
 }
 
 header>* {

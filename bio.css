@@ -60,3 +60,9 @@ header li a:hover {
 .information5 {
   background-color:gray;
 }
+.aboutTheBand {
+  margin:0;
+  padding:20px;
+  height:600px;
+  background-color:tomato;
+}

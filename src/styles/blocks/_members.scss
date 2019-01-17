@@ -1,10 +1,11 @@
 .b-members {
-  background-color: $color-red;
+  // background-color: $color-red;
 
   .b-members__m {
     margin: 0;
     padding: 10px;
     text-align: center;
+    background-color: $color-light;
   }
 }
 

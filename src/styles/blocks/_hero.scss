@@ -13,9 +13,10 @@
     letter-spacing: 4px;
     font-size: 80px;
     text-align: center;
-    text-shadow: 4px 0px $color-red-dark;
+    text-shadow: 4px 0 $color-red-dark;
     margin: 0;
   }
+
   p {
     color: $color-light;
     text-align: right;
@@ -25,6 +26,7 @@
     font-family: $font-italic;
     font-weight: bold;
   }
+
   img {
     position: absolute;
     width: 100%;
@@ -33,24 +35,25 @@
     z-index: -1;
   }
 }
-
-
+/* SVG --- Hero ---*/
 .wrapper {
+  display: flex;
+  flex-direction: column;
   position: absolute;
   top: 45%;
   left: 50%;
   // transform-origin: -50%,-50%;
-   transform: translate(-50%, -100%);
+  transform: translate(-50%, -100%);
   width: 50%;
 
   path {
-    stroke:$color-light;
-    fill: $color-red ;
+    stroke: $color-light;
+    fill: $color-red;
     stroke-dasharray: 1800;
     opacity: 10;
     animation: animate 3s cubic-bezier(0, 0.23, 1, .1);
+    box-shadow: 4px 0 $color-red-dark;
   }
-
   @keyframes animate {
     0% {
       opacity: 0;
@@ -70,11 +73,8 @@
 
     100% {
       opacity: 10;
-      fill: rgba(255, 255, 255, 1);
+      fill: rgba(170, 89, 57, 1);
       stroke-dashoffset: 0;
     }
   }
-
-
-
 }

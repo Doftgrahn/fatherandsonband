@@ -33,3 +33,48 @@
     z-index: -1;
   }
 }
+
+
+.wrapper {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  // transform-origin: -50%,-50%;
+   transform: translate(-50%, -100%);
+  width: 50%;
+
+  path {
+    stroke:$color-light;
+    fill: $color-red ;
+    stroke-dasharray: 1800;
+    opacity: 10;
+    animation: animate 3s cubic-bezier(0, 0.23, 1, .1);
+  }
+
+  @keyframes animate {
+    0% {
+      opacity: 0;
+      fill: none;
+      stroke-dashoffset: 1800;
+    }
+
+    30% {
+      opacity: 10;
+      fill: none;
+      stroke-dashoffset: 1800;
+    }
+
+    90% {
+      fill: rgba(255, 255, 255, 0);
+    }
+
+    100% {
+      opacity: 10;
+      fill: rgba(255, 255, 255, 1);
+      stroke-dashoffset: 0;
+    }
+  }
+
+
+
+}

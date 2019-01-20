@@ -1,0 +1,28 @@
+.b-footer {
+  height: 400px;
+  width: 100%;
+  background-color: $color-dark;
+  display: flex;
+  justify-content: space-between;
+  // justify-content: space-between;
+
+  .b-footer__contact {
+    color: $color-white;
+      &:hover {
+        color:$color-light;
+      }
+  }
+  .b-footer__copyright {
+    color:$color-white;
+
+  }
+  .b-footer__totop{
+    height:20px;
+    width:100px;
+
+  }
+  .b-footer__socialmedia{
+    width:20px;
+    height:20px;
+  }
+}

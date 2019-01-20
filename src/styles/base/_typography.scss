@@ -8,14 +8,18 @@ h2,
 h3 {
   font-family: $font-headline;
   margin-top: 0;
+  text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
 }
 
 h1 {
   font-size: 42px;
+
 }
 
 h2 {
-  font-size: 34px;
+  font-size: 50px;
+  color: $color-red;
+  letter-spacing: 2px;
 }
 
 h3 {

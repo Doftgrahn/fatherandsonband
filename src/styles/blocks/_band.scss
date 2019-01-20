@@ -1,0 +1,52 @@
+.b-band {
+  background-image: url('../images/texture.jpg');
+  padding: 60px 20px;
+  h2 {
+    text-align: center;
+    color: $color-red;
+  }
+  &__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: $width-content;
+    margin: 0 auto;
+  }
+
+  &__member {
+    background: $color-white;
+    width: 30%;
+    min-width: 320px;
+    max-width: 100%;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 2px 2px 4px #3e3e3e99;
+
+    &-info {
+      position: relative;
+      padding: 10px;
+
+      h3 {
+        color: #a15c43;
+        margin: 0;
+        position: absolute;
+        top: -30px;
+        left: -20px;
+        box-shadow: 2px 2px 4px #3e3e3e99;
+        padding: 5px 10px;
+        font-size: 24px;
+        letter-spacing: 1px;
+        display: inline-block;
+        background: $color-gray;
+      }
+    }
+
+    &-instrument {
+      margin-top: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 600;
+    }
+  }
+}

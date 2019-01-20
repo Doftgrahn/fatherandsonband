@@ -1,6 +1,10 @@
 .b-band {
   background-image: url('../images/texture.jpg');
-  padding: 60px 20px;
+  padding: 40px 20px;
+  @media screen and (min-width: 800px) {
+    padding: 60px 20px;
+  }
+  
   h2 {
     text-align: center;
     color: $color-red;

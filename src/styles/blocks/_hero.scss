@@ -19,7 +19,7 @@
 
   p {
     color: $color-light;
-    text-align: right;
+    text-align: center;
     letter-spacing: 2px;
     font-size: 18px;
     margin: 0;
@@ -27,7 +27,9 @@
     font-weight: bold;
     padding: 10px 0;
     animation: uglyAnimatione 2.3s ease-in-out; //cubic-bezier(0, 0.23, 1, .1) infinite;
-
+    @media screen and (min-width: 400px) {
+      text-align: right;
+    }
   }
 
   img {
@@ -38,7 +40,16 @@
     z-index: -1;
   }
   &__content {
-    width: 50%;
+    width: 100%;
+    padding: 0 10px;
+    @media screen and (min-width: 400px) {
+      width: 80%;
+      padding: 0;
+    }
+    @media screen and (min-width: 800px) {
+      width: 50%;
+      padding: 0;
+    }
   }
 }
 

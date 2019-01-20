@@ -7,14 +7,21 @@
   &__wrapper {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 60px $spacing-regular;
+    padding: 40px $spacing-regular;
     max-width: $width-content;
     margin: 0 auto;
+    @media screen and (min-width: 800px) {
+      padding: 60px $spacing-regular;
+    }
   }
   &__container {
-    width: 45%;
+    width: 100%;
+    @media screen and (min-width: 800px) {
+      width: 45%;
+    }
 
     h2 {
       margin-bottom: 0;
@@ -25,19 +32,26 @@
   }
 
   &__images {
-    width: 55%;
-    padding: 40px;
     position: relative;
     z-index: 0;
+    width: 100%;
+    padding-top: 20px;
+    @media screen and (min-width: 800px) {
+      width: 55%;
+      padding: 40px;
+    }
     img {
       width: 60%;
       padding-bottom: 80px;
       &:last-child {
-        width: 50%;
+        width: 55%;
         position: absolute;
         bottom: 0px;
         right: 0;
         padding-bottom: 0;
+        @media screen and (min-width: 800px) {
+          width: 50%;
+        }
       }
     }
   }

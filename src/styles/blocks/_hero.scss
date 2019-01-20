@@ -71,7 +71,7 @@ $dash: 500;
 
   @keyframes animate {
     0% {
-      fill: none;
+      fill: transparent;
       stroke-dashoffset: $dash;
       stroke: $color-red-dark;
     }
@@ -84,9 +84,6 @@ $dash: 500;
     90% {
       stroke-dashoffset: 0;
       fill: $color-red;
-
-    }
-    100% {
     }
   }
   @keyframes uglyAnimatione {

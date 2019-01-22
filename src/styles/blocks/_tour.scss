@@ -1,0 +1,20 @@
+.b-tour {
+  display: flex;
+  flex-direction: column;
+  height:400px;
+  background: url(images/texture.jpg);
+  object-fit:  cover;
+
+  h3 {
+    text-align: center;
+    padding:20px;
+    margin:0 auto;
+  }
+  .b-tour__dates {
+    padding:20px;
+    background-color: $color-light;
+    margin:0 auto;
+    width:80%;
+    justify-content: center;
+  }
+}

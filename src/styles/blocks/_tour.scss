@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   height:400px;
-  background: url(images/texture.jpg);
-  object-fit:  cover;
+  background: url('../images/texture.jpg');
+  object-fit:  fill;
 
   h3 {
     text-align: center;
@@ -16,5 +16,11 @@
     margin:0 auto;
     width:80%;
     justify-content: center;
+  }
+
+  .b-tour__events {
+    padding:0 10px;
+    background-color: $color-red-light;
+
   }
 }

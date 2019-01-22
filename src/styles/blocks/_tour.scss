@@ -1,26 +1,35 @@
 .b-tour {
-  display: flex;
-  flex-direction: column;
-  height:400px;
-  background: url('../images/texture.jpg');
-  object-fit:  fill;
+  background-image: url("../images/texture.jpg");
+  padding: 40px 20px;
+  @media screen and (min-width: 800px) {
+    padding:60px 20px;
+  }
 
   h3 {
     text-align: center;
-    padding:20px;
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: $width-content;
     margin:0 auto;
   }
-  .b-tour__dates {
-    padding:20px;
+
+  &__dates {
+    padding: 20px;
     background-color: $color-light;
-    margin:0 auto;
-    width:80%;
+    margin: 0 auto;
+    width: 80%;
     justify-content: center;
   }
 
-  .b-tour__events {
-    padding:0 10px;
+  &__events {
+    padding: 0 10px;
     background-color: $color-red-light;
-
   }
 }

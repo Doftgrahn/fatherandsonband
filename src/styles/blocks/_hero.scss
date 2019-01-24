@@ -65,7 +65,7 @@ $dash: 500;
     fill: $color-red;
     stroke-dasharray: $dash;
     opacity: 10;
-    animation: animate 2.5s ease-in-out; //cubic-bezier(0, 0.23, 1, .1) infinite;
+    animation: animate 3s ease-in-out; //cubic-bezier(0, 0.23, 1, .1) infinite;
     box-shadow: 4px 0 $color-red-dark;
   }
 

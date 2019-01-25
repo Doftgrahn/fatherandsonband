@@ -1,5 +1,5 @@
 .b-tour {
-  background-image: url("../images/texture.jpg");
+  background-color: $color-light;
   padding: 40px 20px;
   @media screen and (min-width: 800px) {
     padding:60px 20px;
@@ -22,7 +22,7 @@
 
   &__dates {
     padding: 20px;
-    background-color: $color-light;
+    background-color: $color-red-light;
     margin: 0 auto;
     width: 80%;
     justify-content: center;
@@ -30,6 +30,6 @@
 
   &__events {
     padding: 0 10px;
-    background-color: $color-red-light;
+     background-color: $color-white;
   }
 }

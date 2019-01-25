@@ -1,30 +1,52 @@
-header {
+.b-header {
   background-color: #1e1e24;
-  display: flex;
-}
+  padding: 20px 20px;
+  @media screen and (min-width: 800px) {
+    padding: 20px 20px;
+  }
 
-li {
-  display: inline-flex;
-  width: auto;
+  &__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: $width-content;
+    margin: 0 auto;
+  }
+  &__logo {
+    
+    display:flex;
+    flex-direction: column;
+    height:200px;
+    width:200px;
+    margin:0;
+    padding:0;
+    position: absolute;
+    bottom:80%;
+  }
 
-  a {
-    display: inline-block;
-    margin-left: 10px;
-    padding: 14px 16px;
-    text-align: center;
-    text-decoration: none;
-    color: gray;
-    color: #fff8f0;
+  ul {
+    overflow: hidden;
+    margin: 0 0 0 auto;
 
-    &:hover {
-      color: #ffcf99;
+    li {
+     display: inline-flex;
+      width: auto;
+
+      a {
+        letter-spacing: 1px;
+        display: inline-block;
+         margin-left: 10px;
+        padding: 14px 16px;
+        text-align: center;
+        text-decoration: none;
+        color: gray;
+        color: #fff8f0;
+
+        &:hover {
+          color: #ffcf99;
+        }
+      }
     }
   }
-}
-
-ul {
-  overflow: hidden;
-  margin: 0;
-  margin-left: auto;
-  padding: 10px;
 }

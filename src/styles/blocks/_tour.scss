@@ -1,28 +1,41 @@
 .b-tour {
-  background-color: $color-light;
+  background: linear-gradient(45deg, #ffe8cc 0%,#ffce93 100%);
+  border-top: 30px solid $color-red;
+  border-bottom: 30px solid $color-red;
   padding: 40px 20px;
   @media screen and (min-width: 800px) {
-    padding:60px 20px;
+    padding: 60px 20px;
   }
 
-  h3 {
-    text-align: center;
-    padding: 20px;
-    margin: 0 auto;
-  }
-
-  &__container {
+  &__wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    padding: 40px $spacing-regular;
     max-width: $width-content;
-    margin:0 auto;
+    margin: 0 auto;
+    @media screen and (min-width:800px) {
+      padding: 60px $spacing-regular;
+    }
+  }
+
+  h2 {
+    text-align: center;
+    padding: 20px;
+  }
+
+  &__container {
+    width: 100%;
+    @media screen and (min-width: 800px) {
+      width:100%;
+    }
+
   }
 
   &__dates {
     padding: 20px;
-    background-color: $color-red-light;
     margin: 0 auto;
     width: 80%;
     justify-content: center;
@@ -30,6 +43,5 @@
 
   &__events {
     padding: 0 10px;
-     background-color: $color-white;
   }
 }

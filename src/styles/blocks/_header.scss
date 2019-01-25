@@ -1,6 +1,6 @@
 .b-header {
-  background-color: #1e1e24;
   padding: 40px 20px;
+  background-color: #1e1e24;
   @media screen and (min-width: 800px) {
     padding: 40px 20px;
   }
@@ -15,14 +15,14 @@
   }
 
   &__logo {
-    display: none;
-    flex-direction: column;
-    height: 200px;
-    width: 200px;
-    margin: 0;
-    padding: 0;
     position: absolute;
     bottom: 78%;
+    display: none;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    margin: 0;
+    padding: 0;
     @media screen and (min-width:800px) {
       display: flex;
     }
@@ -30,14 +30,14 @@
 
   &__press {
     position: absolute;
+    left: 280px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
-    left: 280px;
-    text-outline: 14px;
-    height: 200px;
     width: 100px;
+    height: 200px;
+    text-outline: 14px;
 
     &:hover {
       fill: $color-red-dark;
@@ -56,8 +56,8 @@
   }
 
   &__pressImage {
-    height: 300px;
     width: 200px;
+    height: 300px;
   }
 
   ul {
@@ -69,12 +69,12 @@
       width: auto;
 
       a {
-        letter-spacing: 1px;
         display: inline-block;
         margin-left: 10px;
         padding: 14px 16px;
         text-align: center;
         text-decoration: none;
+        letter-spacing: 1px;
         color: gray;
         color: #fff8f0;
 

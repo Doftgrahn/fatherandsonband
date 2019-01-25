@@ -1,0 +1,23 @@
+.b-gallery {
+  background-image: url("../images/texture.jpg");
+  padding: 40px 20px;
+  @media screen and (min-width:800px) {
+    padding: 60px 20px;
+  }
+
+  h2 {
+    text-align: center;
+    color: $color-red;
+  }
+
+  &__container {
+    background-color: $color-red;
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: $width-content;
+    margin: 0 auto;
+  }
+}

@@ -1,30 +1,87 @@
-header {
+.b-header {
+  padding: 40px 20px;
   background-color: #1e1e24;
-  display: flex;
-}
+  @media screen and (min-width: 800px) {
+    padding: 40px 20px;
+  }
 
-li {
-  display: inline-flex;
-  width: auto;
+  &__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: $width-content;
+    margin: 0 auto;
+  }
 
-  a {
-    display: inline-block;
-    margin-left: 10px;
-    padding: 14px 16px;
-    text-align: center;
-    text-decoration: none;
-    color: gray;
-    color: #fff8f0;
-
-    &:hover {
-      color: #ffcf99;
+  &__logo {
+    position: absolute;
+    bottom: 78%;
+    display: none;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    @media screen and (min-width:800px) {
+      display: flex;
     }
   }
-}
 
-ul {
-  overflow: hidden;
-  margin: 0;
-  margin-left: auto;
-  padding: 10px;
+  &__press {
+    position: absolute;
+    left: 280px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100px;
+    height: 200px;
+    text-outline: 14px;
+
+    &:hover {
+      fill: $color-red-dark;
+    }
+
+    path {
+      border-width: 5px;
+      stroke: none;
+      fill: $color-white;
+      stroke-width: 20;
+
+      &:hover {
+        fill: $color-red-light;
+      }
+    }
+  }
+
+  &__pressImage {
+    width: 200px;
+    height: 300px;
+  }
+
+  ul {
+    overflow: hidden;
+    margin: 0 0 0 auto;
+
+    li {
+      display: inline-flex;
+      width: auto;
+
+      a {
+        display: inline-block;
+        margin-left: 10px;
+        padding: 14px 16px;
+        text-align: center;
+        text-decoration: none;
+        letter-spacing: 1px;
+        color: gray;
+        color: #fff8f0;
+
+        &:hover {
+          color: #ffcf99;
+        }
+      }
+    }
+  }
 }

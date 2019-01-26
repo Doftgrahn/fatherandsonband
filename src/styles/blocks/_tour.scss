@@ -24,24 +24,37 @@
   h2 {
     text-align: center;
     padding: 20px;
+    margin-bottom: 0;
   }
 
   &__container {
+    background-color: $color-red;
     width: 100%;
+    box-shadow: 2px 2px $color-dark;
     @media screen and (min-width: 800px) {
-      width:100%;
+      width: 100%;
     }
-
   }
 
   &__dates {
-    padding: 20px;
+    padding: 20px ;
     margin: 0 auto;
     width: 80%;
     justify-content: center;
+
   }
 
   &__events {
     padding: 0 10px;
+    line-height: 160%;
+
+    &:nth-child(odd) {
+      background-color: $color-dark;
+      color: $color-white;
+    }
+
+    &:nth-child(even) {
+      background-color: $color-light;
+    }
   }
 }

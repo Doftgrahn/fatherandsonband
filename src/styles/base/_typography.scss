@@ -5,7 +5,8 @@
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: $font-headline;
   margin-top: 0;
   text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
@@ -24,4 +25,7 @@ h2 {
 
 h3 {
   font-size: 28px;
+}
+a {
+  color: $color-red
 }

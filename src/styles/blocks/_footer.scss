@@ -1,38 +1,105 @@
 .b-footer {
-  background-color: $color-dark;
-  color: $color-white;
-  padding: 40px 20px;
-  @media screen and (min-width: 800px) {
-    padding: 60px 20px;
-  }
-
-  &__container {
-    max-width: $width-content;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  background-image: url("../images/texture.jpg");
+  &__wrapper {
     max-width: $width-content;
     margin: 0 auto;
-  }
-
-  .b-footer__contact {
-    a {
-      text-decoration: none;
-      color: $color-white;
-
-      &:hover {
-        color: $color-light;
-      }
+    text-align: center;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    @media screen and (min-width: 800px) {
+      border-top: 2px solid $color-gray-dark;
+      padding: 80px 20px;
     }
   }
 
-  &__copyright {
-    margin-right: 120px;
+  p {
+    margin-top: 0;
+    font-weight: bold;
+    color: $color-gray-dark;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 14px;
+    letter-spacing: 1px;
   }
 
-  &__socialmedia {
-    opacity: 1;
-    width: 40px;
-    height: 40px;
+  &__info {
+    padding-top: 0px;
+    padding-bottom: 20px;
+    width: 100%;
+    @media screen and (min-width: 800px) {
+      padding-top: 0;
+      padding-bottom: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 30%;
+    }
+    h4 {
+      font-size: 36px;
+      color: $color-gray-dark;
+      text-align: center;
+      margin-bottom: 0;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      line-height: 95%;
+      border-bottom: 2px solid;
+      letter-spacing: 2px;
+      @media screen and (min-width: 800px) {
+        font-size: 45px;
+        margin-top: 0;
+        margin-bottom: 20px;
+      }
+    }
+    p {
+      font-size: 10px;
+      text-transform: uppercase;
+      margin-top: 0;
+    }
+  }
+  &__content {
+    width: 100%;
+    line-height: 160%;
+
+    @media screen and (min-width: 800px) {
+      width: 50%;
+      display: flex;
+
+    }
+    &-contact {
+      width: 100%;
+      padding-bottom: 20px;
+      @media screen and (min-width: 800px) {
+        padding-right: 20px;
+        text-align: right;
+      }
+    }
+    &-social {
+      width: 100%;
+      padding-bottom: 20px;
+      @media screen and (min-width: 800px) {
+        width: 50%;
+        padding-left: 20px;
+        text-align: left;
+      }
+      a {
+        text-decoration: none;
+        display: inline-block;
+      }
+      svg {
+        width: 40px;
+        padding: 0;
+        &:first-child {
+          margin-right: 10px;
+        }
+        &:hover {
+          path {
+            fill: $color-red;
+          }
+        }
+      }
+    }
   }
 }

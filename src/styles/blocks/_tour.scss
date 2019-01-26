@@ -30,7 +30,8 @@
   &__container {
     background-color: $color-red;
     width: 100%;
-    box-shadow: 2px 2px $color-dark;
+    //box-shadow: 2px 2px $color-dark;
+    box-shadow: 2px 2px 4px #312d2d94;
     @media screen and (min-width: 800px) {
       width: 100%;
     }
@@ -39,22 +40,24 @@
   &__dates {
     padding: 20px ;
     margin: 0 auto;
-    width: 80%;
+    //width: 80%;
+    width: 100%;
     justify-content: center;
 
   }
 
   &__events {
-    padding: 0 10px;
+    //padding: 0 10px;
+    padding: 10px 20px;
     line-height: 160%;
-
+    margin: 0;
     &:nth-child(odd) {
       background-color: $color-dark;
       color: $color-white;
     }
 
     &:nth-child(even) {
-      background-color: $color-light;
+      background-color: $color-white;
     }
   }
 }

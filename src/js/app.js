@@ -5,9 +5,3 @@ class App {
 }
 
 new App();
-
-
-
-
-let toTop = document.querySelector('#totop');
-console.log(toTop);

@@ -1,7 +1,10 @@
 class App {
-	constructor() {
-		console.log('app.js');
-	}
+  constructor() {
+    console.log('app.js');
+
+  }
 }
 
-new App();
+window.addEventListener('load', () => {
+  new App();
+});

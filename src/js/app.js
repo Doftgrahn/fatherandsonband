@@ -13,7 +13,7 @@ window.addEventListener('load', () => {
 
 // Firebase
 const config = {
-   apiKey: "AIzaSyDon9EBl4F6hxlzQJjqeuQQ_Fiby86bNGA",
+   apiKey: null,
    authDomain: "father-and-son-band.firebaseapp.com",
    databaseURL: "https://father-and-son-band.firebaseio.com",
    projectId: "father-and-son-band",

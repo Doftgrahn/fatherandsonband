@@ -1,13 +1,36 @@
 class App {
-	constructor() {
-		console.log('app.js');
-	}
+  constructor() {
+    console.log('app.js');
+
+
+    const panels = document.querySelectorAll('.b-gallery__container-img');
+
+    panels.forEach(panel => panel.addEventListener('click', toggleOpen));
+    panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
+    // panels.forEach(panel => panel.addEventListener('mouseover', toggleOpen));
+
+
+
+  }
 }
 
-new App();
+window.addEventListener('load', () => {
+  new App();
+
+
+})
 
 
 
+function toggleOpen() {
+  console.log('Hello');
+  this.classList.toggle('open');
+}
 
-let toTop = document.querySelector('#totop');
-console.log(toTop);
+function toggleActive(e) {
+  console.log(e.propertyName);
+  if (e.propertyName.includes('flex')) {
+    this.classList.toggle('open-active');
+    console.log('lalala');
+  }
+}

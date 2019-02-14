@@ -2,9 +2,9 @@
   background: linear-gradient(45deg, #ffe8cc 0%,#ffce93 100%);
   border-top: 30px solid $color-red;
   border-bottom: 30px solid $color-red;
-  padding: 40px 20px;
+  padding: 40px $spacing-regular;
   @media screen and (min-width: 800px) {
-    padding: 60px 20px;
+    padding: 60px $spacing-regular;
   }
 
   &__wrapper {
@@ -13,18 +13,15 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 40px $spacing-regular;
     max-width: $width-content;
     margin: 0 auto;
     @media screen and (min-width:800px) {
-      padding: 60px $spacing-regular;
     }
   }
 
   h2 {
     text-align: center;
     padding: 20px;
-    margin-bottom: 0;
   }
 
   &__container {

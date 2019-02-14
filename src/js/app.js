@@ -2,21 +2,41 @@ class App {
   constructor() {
     console.log('app.js');
 
+
+    const panels = document.querySelectorAll('.b-gallery__container-img');
+
+    panels.forEach(panel => panel.addEventListener('click', toggleOpen));
+    panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
+
+
   }
 }
 
+
+
+
+
 window.addEventListener('load', () => {
   new App();
-   firebase.initializeApp(config);
 
-});
 
-// Firebase
-const config = {
-   apiKey: null,
-   authDomain: "father-and-son-band.firebaseapp.com",
-   databaseURL: "https://father-and-son-band.firebaseio.com",
-   projectId: "father-and-son-band",
-   storageBucket: "father-and-son-band.appspot.com",
-   messagingSenderId: "1079667065376"
- };
+})
+
+
+
+
+
+
+
+function toggleOpen() {
+  console.log('Hello');
+  this.classList.toggle('open');
+}
+
+function toggleActive(e) {
+  console.log(e.propertyName);
+  if (e.propertyName.includes('flex')) {
+    this.classList.toggle('open-active');
+    console.log('lalala');
+  }
+}

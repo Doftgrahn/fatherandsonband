@@ -1,0 +1,7 @@
+a {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-transition-property: opacity, color, border-color, background-color, -webkit-transform;
+  transition-property: opacity, color, border-color, background-color, -webkit-transform;
+  transition-property: transform, opacity, color, border-color, background-color;
+  transition-property: transform, opacity, color, border-color, background-color, -webkit-transform; }

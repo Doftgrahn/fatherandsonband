@@ -1,0 +1,26 @@
+header {
+  background-color: #1e1e24;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: auto; }
+  li a {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+    color: gray;
+    color: #fff8f0; }
+    li a:hover {
+      color: #ffcf99; }
+
+ul {
+  overflow: hidden;
+  margin-left: auto;
+  padding: 10px; }

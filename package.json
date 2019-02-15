@@ -2,9 +2,11 @@
 	"name": "Father-and-son",
 	"version": "1.0.0",
 	"dependencies": {
+		"@glidejs/glide": "^3.2.6",
 		"babel-plugin-transform-object-assign": "^6.22.0",
 		"del": "^3.0.0",
 		"js-marker-clusterer": "^1.0.0",
+		"swiper": "^4.4.6",
 		"vinyl-source-stream": "^2.0.0"
 	},
 	"devDependencies": {

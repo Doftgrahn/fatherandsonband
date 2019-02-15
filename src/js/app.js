@@ -1,17 +1,14 @@
 // import Glide from '@glidejs/glide';
 
- import Gallery from './classes/gallery.js';
-
+import Gallery from './classes/gallery.js';
+import Aos from './classes/aos.js';
 
 class App {
   constructor() {
-   new Gallery();
-
+    new Gallery();
+    new Aos();
   }
 }
-
-
-
 
 window.addEventListener('load', () => {
   new App();

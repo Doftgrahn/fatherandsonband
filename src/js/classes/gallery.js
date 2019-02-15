@@ -2,6 +2,7 @@
  class Gallery {
    constructor() {
 
+
      let swiper = new Swiper('.swiper-container', {
          // Enable lazy loading
          lazy: true,

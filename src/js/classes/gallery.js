@@ -2,30 +2,18 @@
  class Gallery {
    constructor() {
 
-     const mySwiper = new Swiper ('.swiper-container', {
-         // Optional parameters
-         // direction: 'vertical',
-         speed:400,
-         loop: true,
-
-         // If we need pagination
+     let swiper = new Swiper('.swiper-container', {
+         // Enable lazy loading
+         lazy: true,
          pagination: {
            el: '.swiper-pagination',
+           clickable: true,
          },
-
-         // Navigation arrows
          navigation: {
            nextEl: '.swiper-button-next',
            prevEl: '.swiper-button-prev',
          },
-
-         // And if we need scrollbar
-         scrollbar: {
-           el: '.swiper-scrollbar',
-         },
-       })
-
-
+       });
 
    }
  }

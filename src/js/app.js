@@ -2,11 +2,13 @@
 
 import Gallery from './classes/gallery.js';
 import Aos from './classes/aos.js';
+import Lazy from './classes/lazy.js';
 
 class App {
   constructor() {
     new Gallery();
     new Aos();
+    new Lazy();
   }
 }
 

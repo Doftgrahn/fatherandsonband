@@ -33,6 +33,7 @@ const buffer = require('vinyl-buffer');
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const cleanCss = require('gulp-clean-css');
+// const swiper = require('swiper');
 
 // js
 const source = require('vinyl-source-stream');

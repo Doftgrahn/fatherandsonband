@@ -1,14 +1,18 @@
 // import Glide from '@glidejs/glide';
 
-import Gallery from './classes/gallery.js';
-import Aos from './classes/aos.js';
-import Lazy from './classes/lazy.js';
+import Gallery from './classes/gallery';
+import Aos from './classes/aos';
+import Lazy from './classes/lazy';
+import Scroll from './classes/scroll';
+
+
 
 class App {
   constructor() {
     new Gallery();
     new Aos();
     new Lazy();
+    new Scroll();
   }
 }
 

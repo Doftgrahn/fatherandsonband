@@ -1,31 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
 <head>
-
   <meta charset="utf-8">
   <title>Father & son band</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles/main.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-
-  <script type="module" src="js/app.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-
-
+  <script type="text/javascript" src="js/app.js"></script>
   <link rel="shortcut icon" type="image/png" href="images/fasb.png">
-
 </head>
-
 <body>
+
   <header class="b-header">
     <a href="index.html">
       <div class="b-header__logo-wrapper">
-        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 45.44 22.85" style="enable-background:new 0 0 45.44 22.85;" xml:space="preserve">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 45.44 22.85" style="enable-background:new 0 0 45.44 22.85;" xml:space="preserve">
           <g>
             <path d="M6.1,11.26c-0.04,0-0.06-0.02-0.06-0.06l0.02-8.93c0-0.03,0.02-0.05,0.05-0.05h3.95c0.04,0,0.06,0.02,0.06,0.05v1.47
 		c0,0.03-0.02,0.05-0.05,0.05H7.54V5.8h2.53c0.03,0,0.05,0.02,0.05,0.06l0.01,1.47c0,0.03-0.02,0.05-0.06,0.05H7.54v3.81
@@ -91,38 +79,30 @@
 		c-0.36,0.22-0.76,0.34-1.21,0.35L36.83,21.26z M38.17,19.78h0.71c0.28,0,0.52-0.1,0.71-0.31s0.29-0.46,0.29-0.74v-3.46
 		c0-0.26-0.09-0.48-0.27-0.67c-0.18-0.19-0.39-0.28-0.63-0.27l-0.8,0.01L38.17,19.78z" />
           </g>
-
         </svg>
-
       </div>
     </a>
 
     <div class="b-header__container">
       <ul>
         <li><a href="index.html">home</a></li>
-        <li><a href="bio.html">about the band</a></li>
-        <li><a href="#about">members</a></li>
-        <li><a href="#gigs">tour</a></li>
-        <li><a href="#photos">gallery</a></li>
-        <li><a href="#contact">contact</a></li>
-        <li><a href="press.html">press</a></li>
+        <li><a data-scroll="about" href="#">about the band</a></li>
+        <li><a data-scroll="members" href="#">members</a></li>
+        <li><a data-scroll="tour" href="#">tour</a></li>
+        <li><a data-scroll="gallery" href="#">gallery</a></li>
+        <li><a data-scroll="contact" href="#">contact</a></li>
+        <li><a data-scroll="press" href="press.html">press</a></li>
       </ul>
     </div>
-
   </header>
 
-  <section class="b-hero  data-aos=" fade-right"">
+  <section class="b-hero" id="home">
     <img src="images/hero.jpg" alt="Father and son" class="b-hero__image">
     <div class="b-hero__content">
       <div class="wrapper">
-        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 705.03 125.32" style="enable-background:new 0 0 705.03 125.32;" xml:space="preserve">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 705.03 125.32" style="enable-background:new 0 0 705.03 125.32;" xml:space="preserve">
           <style type="text/css">
-            .st0 {
-              fill: #ffe1ba;
-              stroke: #ffe1ba;
-              stroke-width: 3;
-              stroke-miterlimit: 10;
-            }
+
           </style>
           <g>
             <path class="st0" d="M4.27,120.39c-0.35,0-0.53-0.18-0.53-0.53l0.21-72.82c0-0.28,0.14-0.42,0.42-0.42H38.3
@@ -202,7 +182,7 @@
   </section>
 
 
-  <section class="b-info">
+  <section class="b-info" id="about">
     <div class="b-info__wrapper">
       <div class="b-info__container">
         <h2>About the band</h2>
@@ -225,7 +205,7 @@
     </div>
   </section>
 
-  <section class="b-band">
+  <section class="b-band" id="members">
     <h2 class="">Members</h2>
     <div class="b-band__container">
 
@@ -293,7 +273,7 @@
     </div>
   </section>
 
-  <section class="b-tour">
+  <section class="b-tour" id="tour">
     <div class="b-tour__wrapper">
       <h2>Summer Tour 2019</h2>
 
@@ -311,7 +291,7 @@
   </section>
 
 
-  <section class="b-gallery">
+  <section class="b-gallery" id="gallery">
     <div class="b-gallery__wrapper ">
       <h2>Gallery</h2>
 
@@ -360,7 +340,7 @@
     </div>
   </section>
 
-  <footer class="b-footer">
+  <footer class="b-footer" id="contact">
     <div class="b-footer__wrapper">
       <div class="b-footer__info">
         <h4>Father & <br>son band</h4>

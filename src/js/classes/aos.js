@@ -1,8 +1,10 @@
+const aos = require('aos');
+
 class Aos {
   constructor() {
-
-    AOS.init();
-
+    aos.init({
+      once: true,
+    });
   }
 }
 

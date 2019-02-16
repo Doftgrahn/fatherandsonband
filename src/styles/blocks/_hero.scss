@@ -7,7 +7,6 @@
   justify-content: center;
   align-items: center;
   position: relative;
-
   // h1 {
   //   color: $color-light;
   //   letter-spacing: 4px;
@@ -16,7 +15,6 @@
   //   //text-shadow: 4px 0 $color-red-dark;
   //   margin: 0;
   // }
-
   p {
     color: $color-light;
     text-align: center;
@@ -39,6 +37,7 @@
     object-fit: cover;
     z-index: -1;
   }
+
   &__content {
     max-width: 750px;
     width: 100%;
@@ -53,11 +52,11 @@
     }
   }
 }
-
 $dash: 500;
-
 /* SVG --- Hero ---*/
 .wrapper {
+  // height: 100%;
+  // width: 100%;
   display: flex;
   flex-direction: column;
 
@@ -68,20 +67,29 @@ $dash: 500;
     opacity: 10;
     animation: animate 3s ease-in-out; //cubic-bezier(0, 0.23, 1, .1) infinite;
     box-shadow: 4px 0 $color-red-dark;
+
   }
 
+  .st0 {
+    stroke: #ffe1ba;
+     stroke-width: 3;
+    stroke-miterlimit: 10;
+  }
   @keyframes animate {
     0% {
       fill: transparent;
       stroke-dashoffset: $dash;
       stroke: $color-red-dark;
     }
+
     30% {
       stroke: $color-red;
     }
+
     80% {
       fill: transparent;
     }
+
     90% {
       stroke-dashoffset: 0;
       fill: $color-red;
@@ -91,9 +99,11 @@ $dash: 500;
     0% {
       opacity: 0;
     }
+
     80% {
       opacity: 0;
     }
+
     100% {
       opacity: 1;
     }

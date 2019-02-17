@@ -2,7 +2,6 @@
 	"name": "Father-and-son",
 	"version": "1.0.0",
 	"dependencies": {
-		"@glidejs/glide": "^3.2.6",
 		"aos": "^2.3.4",
 		"babel-plugin-transform-object-assign": "^6.22.0",
 		"del": "^3.0.0",

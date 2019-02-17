@@ -33,34 +33,9 @@
       // stroke-width:-1;
     }
   }
-  // &__press {
-  //   position: absolute;
-  //   left: 280px;
-  //   display: flex;
-  //   flex-direction: column;
-  //   flex-wrap: wrap;
-  //   justify-content: space-between;
-  //   width: 100px;
-  //   height: 200px;
-  //   text-outline: 14px;
-  //
-  //   &:hover {
-  //     fill: $color-red-dark;
-  //   }
-  //
-  //   path {
-  //     border-width: 5px;
-  //     stroke: none;
-  //     fill: $color-white;
-  //     stroke-width: 20;
-  //
-  //     &:hover {
-  //       fill: $color-red-light;
-  //     }
-  //   }
-  // }
+
   ul {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -68,6 +43,9 @@
       display: inline-flex;
       flex-direction: row;
       align-items: flex-end;
+      @media screen and (min-width: 800px) {
+        display: flex;
+      }
     }
 
     li {

@@ -1,20 +1,54 @@
 .b-header {
-  z-index: 1;
-  // position: fixed;
+  z-index: 2;
+  position: fixed;
   display: flex;
-  flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
   width: 100%;
-  padding: 20px;
-  background-color: #1e1e24;
+  padding: 10px 20px;
+  background-color: $color-dark;
   @media screen and (min-width: 800px) {
-    padding: 20px;
+   position: static;
+   justify-content: center;
+   // flex-flow: column wrap;
+   align-content: stretch;
+
   }
 
   &__container {
+    position: absolute;
+    width: 100%;
+    background: $color-red;
+    padding: 80px 20px 50px;
+    top: 0;
+    left: 100%;
+    transition: left 0.4s ease;
+    min-height: 100vh;
+    @media screen and (min-width: 800px) {
+      position: static;
+      background: $color-dark;
+      min-height: 40px;
+      padding: 0;
+      margin-left: auto;
+
+    }
+
+    li {
+      padding: 10px 0;
+      font-size: 22px;
+      color: $color-light;
+      font-family: $font-headline;
+
+      a {
+        color: $color-light;
+        font-family: inherit;
+      }
+    }
+
+    &--active {
+      left: 0;
+    }
     @media screen and (min-width: 800px) {
       // padding: 20px 20px;
     }
@@ -22,42 +56,41 @@
 
   &__logo-wrapper {
     display: block;
-    width: 150px;
+    width: 85px;
     height: auto;
     padding: 0;
-    @media screen and (min-width:800px) {}
+    @media screen and (min-width:800px) {
+      width: 150px;
+    }
 
     path {
       stroke: none;
       fill: $color-gray;
-      // stroke-width:-1;
     }
   }
 
-  ul {
-    display: none;
+  .active-meny {}
+
+  &__container-meny {
+    list-style-type: none;
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    align-items: flex-end;
+    justify-content: flex-end;
+    transition: 1s;
     @media screen and (min-width: 800px) {
       display: inline-flex;
       flex-direction: row;
       align-items: flex-end;
-      @media screen and (min-width: 800px) {
-        display: flex;
-      }
     }
 
     li {
-      // width: auto;
       @media screen and (min-width: 800px) {
         display: inline-flex;
         flex-wrap: wrap;
       }
 
       a {
-        // display: inline-block;
-        // margin-left: 10px;
         padding: 20px;
         text-align: left;
         text-decoration: none;

@@ -4,18 +4,12 @@
 
 html {
   // scroll-behavior: smooth;
-   overflow: hidden;
-  @media screen and (min-width: 800px) {
-    overflow:  auto;
-  }
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
-  overflow: hidden;
-   @media screen and (min-width: 800px) {
-     overflow:  auto;
-   }
+  overflow-x: hidden;
 }
 
 img {

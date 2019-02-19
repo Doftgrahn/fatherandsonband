@@ -9,16 +9,15 @@
 
   .swiper-button-next {
     background-image: url("../images/arrow-right.svg");
-    // height: 30px;
-    // width: 30px;
     fill: none;
+    outline:none;
   }
 
   .swiper-button-prev {
     background-image: url("../images/arrow-left.svg");
-    // height: 30px;
-    // width: 30px;
     fill: none;
+    outline:none;
+
   }
 
   .swiper-pagination-bullet {

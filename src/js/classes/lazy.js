@@ -5,7 +5,7 @@ class Lazy {
   constructor() {
 
 
-  
+console.log('lazy');  
 
 
   }

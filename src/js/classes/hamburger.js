@@ -1,25 +1,20 @@
 class Hamburger {
   constructor() {
-
-    const hamburger = document.querySelectorAll('.b-header__hamburgerContainer');
-    hamburger.forEach(node => {
-      node.addEventListener('click', myHamburger);
-    });
+    this.hamburger = document.querySelector('.b-header__hamburgerContainer');
+    this.wrapper = document.querySelector('.b-header__container');
+    
+    if(this.hamburger && this.wrapper) {
+      this.hamburger.addEventListener('click', () => {
+        this.toggleMenu();
+      });
+    }
   }
+
+  toggleMenu() {
+    this.hamburger.classList.toggle('active');
+    this.wrapper.classList.toggle('b-header__container--active');
+  }
+
 };
 
-export default Hamburger
-
-
-
-
-function myHamburger(e) {
-  const active = document.querySelector('.active');
-
-   e.preventDefault()
-  if (active) {
-    active.classList.remove('active');
-  } else {
-    e.currentTarget.classList.add('active');
-  }
-}
+export default Hamburger;

@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-size: 20px;
 }
 
 html {
@@ -10,11 +11,11 @@ html {
 body {
   margin: 0;
   overflow-x: hidden;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
+  // -webkit-user-select: none;
+  // -moz-user-select: none;
+  // -ms-user-select: none;
+  // -o-user-select: none;
+  // user-select: none;
 }
 
 img {

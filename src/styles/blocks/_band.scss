@@ -1,5 +1,5 @@
 .b-band {
-  background-image: url("../images/texture.jpg");
+    background-image: url("../images/texture.jpg");
   padding: 40px 20px;
   @media screen and (min-width: 800px) {
     padding: 60px 20px;
@@ -45,13 +45,19 @@
         display: inline-block;
         background: $color-gray;
       }
+      p {
+        font-size: 16px;
+        margin-top:0;
+      }
+      .b-band__member-instrument {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 600;
+      }
     }
 
-    &-instrument {
-      margin-top: 14px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      font-weight: 600;
-    }
+
   }
 }

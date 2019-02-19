@@ -15,7 +15,6 @@
     align-items: center;
     max-width: $width-content;
     margin: 0 auto;
-    @media screen and (min-width:800px) {}
   }
 
   h2 {
@@ -25,32 +24,27 @@
 
   &__container {
     background-color: $color-red;
-    width: 100%;
+    width: 95%;
+    padding: 1em;
     //box-shadow: 2px 2px $color-dark;
     box-shadow: 2px 2px 4px #312d2d94;
     @media screen and (min-width: 800px) {
-      width: 100%;
+      padding: 2em;
     }
   }
 
   &__dates {
-    
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: stretch;
-    justify-content: space-between;
-    padding: 1em;
-    margin: 0 auto;
-    //width: 80%;
-    width: 100%;
     justify-content: center;
+    margin: 0 auto;
+    justify-content: center;
+    width: 100%;
 
-
-    & p
-     {
-       padding: 1em;
-
+    & p {
+      padding: 1em;
+      margin: 0;
 
       &:nth-child(odd) {
         background-color: $color-dark;

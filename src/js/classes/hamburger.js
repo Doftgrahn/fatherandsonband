@@ -1,9 +1,10 @@
 class Hamburger {
   constructor() {
+
     this.hamburger = document.querySelector('.b-header__hamburgerContainer');
     this.wrapper = document.querySelector('.b-header__container');
-    
-    if(this.hamburger && this.wrapper) {
+
+    if (this.hamburger && this.wrapper) {
       this.hamburger.addEventListener('click', () => {
         this.toggleMenu();
       });

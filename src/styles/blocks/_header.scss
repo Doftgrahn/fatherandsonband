@@ -1,6 +1,7 @@
 .b-header {
   z-index: 2;
   position: fixed;
+  top: 0;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -9,11 +10,8 @@
   padding: 10px 20px;
   background-color: $color-dark;
   @media screen and (min-width: 800px) {
-   position: static;
-   justify-content: center;
-   // flex-flow: column wrap;
-   align-content: stretch;
-
+    position: fixed;
+    justify-content: center;
   }
 
   &__container {
@@ -28,10 +26,8 @@
     @media screen and (min-width: 800px) {
       position: static;
       background: $color-dark;
-      min-height: 40px;
+      min-height: 10px;
       padding: 0;
-      margin-left: auto;
-
     }
 
     li {

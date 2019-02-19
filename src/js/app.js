@@ -4,6 +4,7 @@ import Lazy from './classes/lazy';
 import Scroll from './classes/scroll';
 import Hamburger from './classes/hamburger';
 import Tour from './classes/tour';
+import HeaderScroll from './classes/headerScroll';
 
 class App {
   constructor() {
@@ -13,6 +14,7 @@ class App {
     new Scroll();
     new Hamburger();
     new Tour();
+    new HeaderScroll();
   }
 }
 

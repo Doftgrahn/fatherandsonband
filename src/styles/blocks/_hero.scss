@@ -1,6 +1,6 @@
 .b-hero {
   width: 100%;
-  height: 83vh;
+  height: 100vh;
   background: rgba(170, 89, 57, 0.5);
   display: flex;
   flex-direction: column;
@@ -60,6 +60,9 @@ $dash: 500;
   z-index: -1;
   display: flex;
   flex-direction: column;
+  @media screen and(min-width:800px) {
+    transform: scale(1.2vh);
+  }
 
   path {
     stroke: $color-light;
@@ -68,12 +71,11 @@ $dash: 500;
     opacity: 10;
     animation: animate 3s ease-in-out; //cubic-bezier(0, 0.23, 1, .1) infinite;
     box-shadow: 4px 0 $color-red-dark;
-
   }
 
   .st0 {
     stroke: #ffe1ba;
-     stroke-width: 3;
+    stroke-width: 3;
     stroke-miterlimit: 10;
   }
   @keyframes animate {

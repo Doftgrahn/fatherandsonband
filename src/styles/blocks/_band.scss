@@ -1,5 +1,5 @@
 .b-band {
-  background-image: url('../images/texture.jpg');
+  background-image: url("../images/texture.jpg");
   padding: 40px 20px;
   @media screen and (min-width: 800px) {
     padding: 60px 20px;
@@ -9,6 +9,7 @@
     text-align: center;
     color: $color-red;
   }
+
   &__container {
     display: flex;
     flex-direction: row;

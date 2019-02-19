@@ -1,12 +1,6 @@
-
-
-
 class Lazy {
   constructor() {
-
-
-console.log('lazy');  
-
+    console.log('aint got time for dat');
 
   }
 }

@@ -1,13 +1,21 @@
 * {
   box-sizing: border-box;
+  font-size: 20px;
 }
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
+  overflow-x: hidden;
+  // -webkit-user-select: none;
+  // -moz-user-select: none;
+  // -ms-user-select: none;
+  // -o-user-select: none;
+  // user-select: none;
 }
 
 img {

@@ -92,14 +92,14 @@
 
       a {
         font-size: 25px;
-        padding: 20px;
+        // padding: 20px;
         text-align: left;
         text-decoration: none;
         letter-spacing: 1px;
         color: gray;
         color: #fff8f0;
         @media screen and (min-width: 800px) {
-          padding: 14px 16px;
+           padding: 0 10px;
           font-size: 20px;
         }
 

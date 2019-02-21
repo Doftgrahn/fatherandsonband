@@ -6,7 +6,7 @@ class Concerts {
     this.renderEverything();
   }
   createSingleConcertinDOM() {
-    let content = `<span>${this.date}</span><span>${this.place}</span><span>${this.time}</span>`;
+    const content = `<span>${this.date}</span><span>${this.place}</span><span>${this.time}</span>`;
     return content;
   }
   renderEverything() {
@@ -14,13 +14,12 @@ class Concerts {
     const eventsDom = [...eventContainer];
     eventsDom.forEach(element => {
       const timeCheck = this.checkIfDateHasPassed();
-      let p = document.createElement('p');
-      element.append(p);
+      const paragraph = document.createElement('p');
       if (timeCheck) {
-        p.innerHTML = this.createSingleConcertinDOM();
+        element.append(paragraph);
+        paragraph.innerHTML = this.createSingleConcertinDOM();
       } else {
-        p.style.padding = "0";
-        while (p.firstChild) p.removeChild(p.firstChild);
+        paragraph.remove();
       }
     })
   }
@@ -28,10 +27,8 @@ class Concerts {
     const date = new Date();
     const concertDate = new Date(this.date)
     if (date < concertDate) {
-      console.log('Future');
       return true
     } else {
-      console.log('Past');
       return false
     }
   }
@@ -42,6 +39,7 @@ function showItAll() {
   let concert2 = new Concerts('1997-05-04', 'Bad Mittendorf', '20:00');
   let concert3 = new Concerts('1996-01-05', 'Bad Aussee', '17:00');
   let concert4 = new Concerts('2022-01-02', 'Bad Ischl', '14:00');
+  let concert5 = new Concerts('2025-01-05', 'Göteborg', '20:00');
 }
 
 class Tour {

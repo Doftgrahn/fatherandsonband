@@ -1,62 +1,51 @@
-class Tour {
-  constructor() {
+class Concerts {
+  constructor(date, place, time) {
+    this.date = date;
+    this.place = place;
+    this.time = time;
+    this.renderEverything();
+  }
+  createSingleConcertinDOM() {
+    const content = `<span>${this.date}</span><span>${this.place}</span><span>${this.time}</span>`;
+    return content;
+  }
+  renderEverything() {
     const eventContainer = document.querySelectorAll('.b-tour__dates');
-    if (eventContainer) {
-      renderEverything()
+    const eventsDom = [...eventContainer];
+    eventsDom.forEach(element => {
+      const timeCheck = this.checkIfDateHasPassed();
+      const paragraph = document.createElement('p');
+      if (timeCheck) {
+        element.append(paragraph);
+        paragraph.innerHTML = this.createSingleConcertinDOM();
+      } else {
+        paragraph.remove();
+      }
+    })
+  }
+  checkIfDateHasPassed() {
+    const date = new Date();
+    const concertDate = new Date(this.date)
+    if (date < concertDate) {
+      return true
+    } else {
+      return false
     }
   }
-};
+}
 
-const tour = [{
-    date: '26/8',
-    place: 'Altaussee',
-    time: '14:00',
-    link: 'www.youtube.com'
-  },
-  {
-    date: '27/8',
-    place: 'Bad Aussee',
-    time: '16:00',
-  },
-  {
-    date: '15/8',
-    place: 'Bad Ischl',
-    time: '19:00'
-  },
-  {
-    date: '10/8',
-    place: 'somehere',
-    time: '20:00'
-  },
-  {
-    date: '23/8',
-    place: 'Zell am See',
-    time: '20:33'
-  },
-  {
-    date: '20/9',
-    place: 'Bad Mittendorf',
-    time: '19:00'
+function showItAll() {
+  let concert1 = new Concerts('2020-09-13', 'Altaussee', '19:00');
+  let concert2 = new Concerts('1997-05-04', 'Bad Mittendorf', '20:00');
+  let concert3 = new Concerts('1996-01-05', 'Bad Aussee', '17:00');
+  let concert4 = new Concerts('2022-01-02', 'Bad Ischl', '14:00');
+  let concert5 = new Concerts('2025-01-05', 'Göteborg', '20:00');
+}
+
+class Tour {
+  constructor() {
+    showItAll();
   }
-];
-
-function renderEverything() {
-  const eventContainer = document.querySelectorAll('.b-tour__dates');
-  const eventsDom = [...eventContainer];
-  eventsDom.forEach(data => {
-    let elements = tour.map(renderSingleConcert);
-    elements.forEach(element => {
-      let p = document.createElement('p');
-      data.appendChild(p);
-      p.innerHTML = element;
-    });
-  });
-};
-
-function renderSingleConcert(concert) {
-  let content = ` ${concert.date} in ${concert.place} <br> <i>${concert.time}</i>.`;
-  let div = `${content}`;
-  return div;
-};
+}
 
 export default Tour;

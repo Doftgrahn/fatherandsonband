@@ -35,9 +35,12 @@
 
     li {
       padding: 10px 0;
-      font-size: 22px;
+      font-size: 30px;
       color: $color-light;
       font-family: $font-headline;
+      @media screen and (min-width: 800px) {
+        font-size: 20px;
+      }
 
       a {
         color: $color-light;
@@ -68,8 +71,6 @@
     }
   }
 
-  .active-meny {}
-
   &__container-meny {
     list-style-type: none;
     display: flex;
@@ -90,14 +91,16 @@
       }
 
       a {
-        padding: 20px;
+        font-size: 25px;
+        // padding: 20px;
         text-align: left;
         text-decoration: none;
         letter-spacing: 1px;
         color: gray;
         color: #fff8f0;
         @media screen and (min-width: 800px) {
-          padding: 14px 16px;
+           padding: 0 10px;
+          font-size: 20px;
         }
 
         &:hover {

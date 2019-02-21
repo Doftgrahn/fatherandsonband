@@ -1,6 +1,5 @@
 class HeaderScroll {
   constructor() {
-    console.log(scrollIt);
   }
 }
 

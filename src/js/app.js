@@ -1,5 +1,5 @@
 import Gallery from './classes/gallery';
-import Aos from './classes/aos';
+import Slidein from './classes/aos';
 import Lazy from './classes/lazy';
 import Scroll from './classes/scroll';
 import Hamburger from './classes/hamburger';
@@ -9,7 +9,7 @@ import HeaderScroll from './classes/headerScroll';
 class App {
   constructor() {
     new Gallery();
-    new Aos();
+    new Slidein();
     new Lazy();
     new Scroll();
     new Hamburger();

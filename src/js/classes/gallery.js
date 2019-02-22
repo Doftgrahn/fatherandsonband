@@ -1,4 +1,5 @@
 const Swiper = require('Swiper');
+
 class Gallery {
   constructor() {
     let swiperWrapper = document.querySelector('.swiper-container');
@@ -6,8 +7,6 @@ class Gallery {
       this.insertSwiper();
     }
   }
-
-
 
   insertSwiper() {
     let swiper = new Swiper('.swiper-container', {

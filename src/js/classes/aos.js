@@ -1,12 +1,13 @@
-const aos = require('aos');
+const Aos = require('aos');
 
-class Aos {
+
+class Slidein {
+
   constructor() {
-    aos.init({
+    Aos.init({
       once: true,
     });
   }
 }
 
-
-export default Aos;
+export default Slidein;

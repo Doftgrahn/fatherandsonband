@@ -2,6 +2,7 @@
 
 .b-gallery {
   padding: 40px $spacing-regular;
+   // background: linear-gradient(45deg, #ffe8cc 0%,#ffce93 100%);
   background-image: url("../images/texture.jpg");
   @media screen and (min-width:800px) {
     padding: 60px $spacing-regular;

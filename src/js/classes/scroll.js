@@ -13,7 +13,7 @@ class Scroll {
   }
 
   scroll(target, e) {
-    e.preventDefault();
+      e.preventDefault();
     let targetSection = target.getAttribute('data-scroll');
     document.getElementById(targetSection).scrollIntoView();
   }

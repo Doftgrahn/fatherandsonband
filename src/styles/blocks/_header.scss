@@ -10,7 +10,7 @@
   padding: 10px 20px;
   background-color: $color-dark;
   @media screen and (min-width: 800px) {
-    position: static;
+    position: fixed;
     justify-content: center;
   }
 

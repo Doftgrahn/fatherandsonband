@@ -25,11 +25,9 @@ class Concerts {
   }
   checkIfDateHasPassed() {
     const date = new Date();
-    const concertDate = new Date(this.date)
-    if (date < concertDate) {
+    const hasDatePassed = new Date(this.date)
+    if (date < hasDatePassed) {
       return true
-    } else {
-      return false
     }
   }
 }

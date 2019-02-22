@@ -8,7 +8,6 @@ class Hamburger {
       });
     }
   }
-
   toggleMenu() {
     this.hamburger.classList.toggle('active');
     this.wrapper.classList.toggle('b-header__container--active');

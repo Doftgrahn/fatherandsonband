@@ -23,7 +23,7 @@ class Concerts {
       }
     })
   }
-  checkIfDateHasPassed() {
+  checkIfDateHasPassed () {
     const date = new Date();
     const hasDatePassed = new Date(this.date)
     if (date < hasDatePassed) {

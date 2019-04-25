@@ -8,7 +8,7 @@ class Gallery {
   }
 
 
-
+  
   insertSwiper() {
     let swiper = new Swiper('.swiper-container', {
       // Enable lazy loading

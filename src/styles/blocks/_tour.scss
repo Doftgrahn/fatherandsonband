@@ -21,7 +21,7 @@
 
   h2 {
     text-align: center;
-    padding: 20px;
+    padding: $spacing-regular;
   }
 
   &__container {
@@ -40,13 +40,13 @@
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
-    margin: 0;
     justify-content: center;
     // width: 100%;
     & p {
       display: inline-block;
       padding: $spacing-regular;
       margin: 0;
+      padding:10px;
       display: flex;
       flex-direction: row;
       justify-content: space-around;

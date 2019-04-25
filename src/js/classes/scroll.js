@@ -1,7 +1,7 @@
 class Scroll {
   constructor() {
     let header = document.querySelector('.b-header__container');
-    let headerTargets = header.querySelectorAll('a');
+    let headerTargets = [...header.querySelectorAll('.b-header__container-meny-links')];
 
     if (headerTargets.length) {
       headerTargets.forEach(link => {
@@ -24,9 +24,6 @@ class Scroll {
     this.hamburger.classList.remove('active');
   }
 }
-
-
-
 
 
 export default Scroll;

@@ -7,17 +7,17 @@ import Tour from './classes/tour';
 import HeaderScroll from './classes/headerScroll';
 
 class App {
-  constructor() {
-    new Gallery();
-    new Aos();
-    new Lazy();
-    new Scroll();
-    new Hamburger();
-    new Tour();
-    new HeaderScroll();
-  }
+    constructor() {
+        new Gallery();
+        new Aos();
+        new Lazy();
+        new Scroll();
+        new Hamburger();
+        new Tour();
+        new HeaderScroll();
+    }
 }
 
 window.addEventListener('load', () => {
-  new App();
+    new App();
 });

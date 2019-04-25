@@ -32,6 +32,7 @@ class Concerts {
   }
 }
 
+
 function showItAll() {
   let concert1 = new Concerts('2020-09-13', 'Altaussee', '19:00');
   let concert2 = new Concerts('1997-05-04', 'Bad Mittendorf', '20:00');
